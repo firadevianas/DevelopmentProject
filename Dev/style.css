@@ -1,0 +1,89 @@
+#MainMenu {
+    font-size: medium;
+    color: darkkhaki;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 3px;
+}
+#content{
+    font-size: medium;
+    color: darkkhaki;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: beige;
+}
+#btnForm{
+    padding: 10px 10px;
+    background-color: cornsilk;
+    border-radius: 3px;
+}
+#btnForm:hover{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.Icon{
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 30px;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    font-family: 'Helvetica Neue';
+    font-weight: lighter;
+    color: blanchedalmond;
+}
+.submenu{
+    font-family: 'Helvetica Neue';
+    padding: 6px 25px 6px 25px;
+    cursor: pointer;
+    float: left;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+}
+.submenu a{
+    color: darkkhaki;
+    text-decoration: none;
+}
+.submenu:hover {
+    background-color: #ddd;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

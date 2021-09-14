@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+}
+
+
+img:hover{
+    background-color: seagreen;
+}
+
+.snowman {
+    background-color: rosybrown;
+}
+.circular {
+    border-radius: 50%;
+}
