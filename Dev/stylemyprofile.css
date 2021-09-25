@@ -1,0 +1,76 @@
+#Main {
+    font-family: 'Helvetica Neue';
+    height: 150%;
+    width: 70%;
+    font-size: medium;
+    background-color: #195190FF;
+    border-color:#A2A2A1FF;
+    border-style: double;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.leftside{
+    overflow: hidden;
+    height: 150%;
+    width: 40%;
+    background-color: #A2A2A1FF;
+    color: #195190FF;
+}
+img{
+    margin-top: 50px;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.name{
+    text-align: center;
+    font-size: 28px;
+    height: 25%;
+    overflow: hidden;
+}
+#content{
+    font-size: medium;
+    color: darkkhaki;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: beige;
+}
+#btnForm{
+    padding: 10px 10px;
+    background-color: cornsilk;
+    border-radius: 3px;
+}
+#btnForm:hover{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.Icon{
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 30px;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    font-family: 'Helvetica Neue';
+    font-weight: lighter;
+    color: blanchedalmond;
+}
+.submenu{
+    font-family: 'Helvetica Neue';
+    padding: 6px 25px 6px 25px;
+    cursor: pointer;
+    float: left;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+}
+.submenu a{
+    color: darkkhaki;
+    text-decoration: none;
+}
+.submenu:hover {
+    background-color: #ddd;
+  }
+
