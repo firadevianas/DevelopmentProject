@@ -1,0 +1,177 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+#title {
+    text-align: left;
+}
+.container-fluid {
+    padding : 3% 15% 7%;
+}
+.big-heading {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.section-heading {
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.feature-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.rotateImg {
+    transform: rotate(25deg);
+    width: 60%;
+    position: absolute;
+}
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+    .rotateImg {
+        position: static;
+        transform: rotate(0);
+    }
+    
+}
+
+/* color section */
+
+.colored-section {
+    color: #fff;
+    background-color: #ff4c68;
+}
+.white-section {
+    background-color: #fff;
+}
+
+/* navbar */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: Ubuntu;
+    font-size: 2.5em;
+}
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: 'Montserrat';
+}
+
+/* btn */
+.download-btn {
+    margin: 5% 3% 5% 0;
+}
+
+/* section feature */
+#features {
+    padding: 7% 10%;
+    position: relative;
+    
+}
+
+.feature-box{
+    padding: 4.5%;
+} 
+
+
+.description {
+    color: #8f8f8f;
+}
+
+.fas {
+    padding: 20px 0 20px 0;
+    color: #ef8172;
+}
+
+.fas:hover {
+    color: #ff4c68;
+}
+
+/* testimonial section*/
+
+#testimonials {
+    background-color: #ef8172;
+    color: #fff;
+}
+
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 15px;
+}
+
+#Testimonial-carousel{
+    padding: 7% 15%;
+}
+
+.testimonial-text {
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* press section */
+
+#press {
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+
+/* pricing */
+#pricing {
+    padding: 100px;
+    font-family: Montserrat;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+/* CTA */
+
+#cta {
+    padding: 7% 15%;
+}
+
+.title-cta{
+    line-height: 1.5;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+
+/* Footer */
+#footer {
+    margin: 20px 40px;
+
+}
+
+.sosmed i{
+    margin: 20px 20px;
+}
+
