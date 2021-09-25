@@ -133,10 +133,13 @@ h1,h2,h3,h4,h5,h6{
 /* press section */
 
 #press {
+    background-color: #ef8172;
+    color: #fff;
     padding-bottom: 3%;
 }
 
 .press-logo {
+    
     width: 15%;
     margin: 20px 20px 50px;
 }
