@@ -336,3 +336,82 @@ function fibonacciGenerator (n) {
   var list = document.lastElementChild.lastElementChild.lastElementChild.previousElementSibling.lastElementChild
   //get last 2 element
   
+
+  //higher order function
+  function add(num1,num2){
+    return num1+num2;
+}
+
+function substract(num1,num2){
+    return num1-num2;
+}
+
+function multiple(num1,num2){
+    return num1*num2;
+}
+function devide(num1,num2){
+    return num1/num2;
+}
+
+function calculate(num1,num2,operator){
+    return operator(num1,num2);
+}
+
+
+// JS object 
+
+var houseKeeper1 = {
+  name : "jullie",
+  workingExperience : 12,
+  age : 30,
+  cleaningRepertoire: ["bathroom","room","hall"] 
+}
+
+
+
+// construction function
+function HouseKeeper(name,workingExperience,age,cleaningRepertoire){
+  this.name = name;
+  this.workingExperience = workingExperience;
+  this.age = age;
+  this.cleaningRepertoire = cleaningRepertoire;
+}
+
+var houseKeeper1 = new HouseKeeper("Jullie",12,30,["bathroom","hall"]);
+var houseKeeper2 = new HouseKeeper("Elie",2,22,["hall","Pool"]);
+
+//construction function
+function HouseKeeper(name,workingExperience,age,cleaningRepertoire){
+  this.name = name;
+  this.workingExperience = workingExperience;
+  this.age = age;
+  this.cleaningRepertoire = function(){
+      alert("cleaning on progress");
+  }}
+
+
+// callback function 
+function anotherEventListener(typeOfEvent,callback){
+  //Detect event code
+
+  var eventThatHappened = {
+      eventType : "keypress",
+      key : "l",
+      durationOfKeypress: 2
+
+  }
+
+  if(eventThatHappened.eventType === typeOfEvent){
+      callback(eventThatHappened);
+  }
+
+}
+
+function greeting(name) {
+  alert('Hello ' + name);
+}
+
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+  callback(name);
+}
