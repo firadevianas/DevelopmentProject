@@ -6,7 +6,11 @@ mongoose.connect("mongodb://localhost:27017/FruitDB",{useNewURLParser:true});
 
 const fruitSchema = new mongoose.Schema({
     name : String,
-    rating: Number,
+    rating: {
+      type: Number,
+      min: 1,
+      max:10
+    },
     review: String
 });
 
@@ -54,5 +58,20 @@ Fruit.find(function(err, fruits){
     fruits.forEach(function(fruit){
       console.log(fruit.name)
     })
+  }
+})
+Fruit.updateOne({_id:"62a21df80167bf712dfa14ac"},{name:"peaches"},function(err){
+  if(err) {
+      console.log(err);
+  }else {
+      console.log("succesfully update the doc")
+  }
+})
+
+Fruit.deleteOne({_id:"62a21ef281e3a5c864f08332"},function(err){
+  if(err) {
+    console.log(err);
+  }else{
+    console.log("succesfully delete the doc")
   }
 })
