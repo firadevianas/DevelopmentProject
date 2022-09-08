@@ -3,30 +3,6 @@ const mongoose = require('mongoose');
 mongoose.connect("mongodb://localhost:27017/FruitDB",{useNewURLParser:true});
 //mongoose.connect("mongodb://localhost:27017/FruitDB",{useNewURLParser:true});
 
-//create schema
-
-const personSchema = new mongoose.Schema({
-    name : String,
-    age: Number
-});
-
-const Person = mongoose.model("Person",personSchema);
-
-const person = new Person({
-    name : "Johny",
-    age : 37
-})
-
-//person.save();
-
-Person.deleteMany({name: "Johny"},function(err){
-    if(err){
-        console.log(err);
-    }else{
-        console.log("success delete john");
-    } 
-})
-
 const fruitSchema = new mongoose.Schema({
     name : String,
     rating: {
@@ -45,4 +21,45 @@ const fruit = new Fruit({
   })
 
 //fruit.save();
+
+const personSchema = new mongoose.Schema({
+    name : String,
+    age: Number,
+    favoriteFruit: fruitSchema
+});
+
+const Person = mongoose.model("Person",personSchema);
+
+const mango = new Fruit({
+    name : "mango",
+    score: 7,
+    review: "its good one"
+});
+mango.save();
+
+
+Person.updateOne({name:"John"},{favoriteFruit:mango},function(err){
+    if(err) {
+        console.log(err);
+    }else {
+        console.log("succesfully update the doc")
+    }
+  })
+
+// const person = new Person({
+//     name : "John",
+//     age : 30
+// })
+
+// person.save();
+
+// Person.deleteMany({name: "John"},function(err){
+//     if(err){
+//         console.log(err);
+//     }else{
+//         console.log("success delete john");
+//     } 
+// })
+
+
 
